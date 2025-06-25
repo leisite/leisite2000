@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>贪吃蛇小游戏</h1>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <div class="controls">
+        <button id="startBtn">开始游戏</button>
+        <button id="pauseBtn">暂停</button>
+        <button id="restartBtn">重新开始</button>
+        <button id="showInstructionsBtn">游戏说明</button>
+    </div>
+    <div id="score">分数：0</div>
+    <script src="snake.js"></script>
+    <script>
+    document.getElementById('showInstructionsBtn').onclick = function() {
+        alert(`操作说明：\n\n- 方向键或WASD控制移动\n- 空格键：暂停/继续\n- 开始游戏：点击"开始游戏"按钮\n- 暂停：点击"暂停"按钮或按空格\n- 重新开始：点击"重新开始"按钮\n- 贪吃蛇可以穿墙\n- 黄色豆子：普通食物，吃到加分\n- 红色豆子：死亡豆子，吃到直接死亡\n- 绿色豆子：减速豆，吃到后贪吃蛇速度变慢\n- 紫色豆子：反向豆，吃到后方向键反向10秒`);
+    };
+    </script>
+</body>
+</html> 
